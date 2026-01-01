@@ -1,0 +1,43 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+venv/
+env/
+*.egg-info/
+backend/venv/
+ai-engine/venv/
+
+# Node.js
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+
+# Databases
+chroma_data/
+ai-engine/chroma_data/
+*.sqlite3
+*.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+CLAUDE.md
