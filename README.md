@@ -624,12 +624,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - LangChain and LangGraph for agent framework
 - ChromaDB for vector database
 - FastAPI for excellent Python web framework
-- React and Vite for modern frontend development
+- React, Tailwind and Vite for modern frontend development
 
 ## Contact
 
-For questions or support, please open an issue on GitHub.
-
----
-
-**Built with ❤️ for Lagos renters**
+abdullahbadru66@gmail.com
+https://www.linkedin.com/in/abdullahibadrudeen
++234 903 4869 909
