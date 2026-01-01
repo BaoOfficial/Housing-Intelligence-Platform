@@ -1,4 +1,5 @@
 import ChatInterface from '../components/Chat/ChatInterface';
+import { ASSISTANT_NAME, ASSISTANT_TAGLINE } from '../constants/app';
 
 const ChatPage = () => {
   return (
@@ -13,8 +14,8 @@ const ChatPage = () => {
               </svg>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-white">AI Assistant</h1>
-              <p className="text-xs text-primary/80">Ask me anything about Lagos properties</p>
+              <h1 className="text-xl font-bold text-white">{ASSISTANT_NAME}</h1>
+              <p className="text-xs text-primary/80">{ASSISTANT_TAGLINE}</p>
             </div>
           </div>
         </div>

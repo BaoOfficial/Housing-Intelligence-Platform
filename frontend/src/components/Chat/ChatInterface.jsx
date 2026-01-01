@@ -4,6 +4,7 @@ import ChatInput from './ChatInput';
 import TypingIndicator from './TypingIndicator';
 import PropertyCard from '../Properties/PropertyCard';
 import { chatAPI } from '../../services/api';
+import { WELCOME_MESSAGE } from '../../constants/app';
 
 const ChatInterface = () => {
   const [messages, setMessages] = useState([]);
@@ -28,7 +29,7 @@ const ChatInterface = () => {
     setMessages([
       {
         id: 'welcome',
-        text: "Hello! 👋 I'm your AI assistant for finding homes in Lagos. I can help you discover properties, compare neighborhoods, and read authentic tenant reviews. What are you looking for today?",
+        text: WELCOME_MESSAGE,
         isUser: false,
         timestamp: new Date().toISOString(),
       },

@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { ASSISTANT_NAME } from '../../constants/app';
 
 const ChatMessage = ({
   message,
@@ -30,6 +31,11 @@ const ChatMessage = ({
             : 'bg-white/5 backdrop-blur-sm text-white border border-white/10'
         }`}
       >
+        {/* Sender Name */}
+        <div className="text-xs font-semibold mb-2 opacity-70">
+          {isUser ? 'You' : ASSISTANT_NAME}
+        </div>
+
         <div className="text-base leading-relaxed prose prose-invert max-w-none">
           {isUser ? (
             <p className="whitespace-pre-wrap">{message}</p>

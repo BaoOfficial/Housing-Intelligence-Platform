@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ImageCarousel from '../components/common/ImageCarousel';
+import { ASSISTANT_NAME } from '../constants/app';
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -179,7 +180,7 @@ const LandingPage = () => {
 
         {/* Hero Content */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-center px-6 max-w-5xl">
+          <div className="text-center px-6 max-w-5xl mt-20">
             <div className="inline-block mb-4 px-5 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
               <span className="text-rajah font-semibold text-sm">AI-Powered Property Search</span>
             </div>
@@ -193,7 +194,7 @@ const LandingPage = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Experience the future of property search. Chat with our intelligent AI assistant to discover homes, explore neighborhoods, and read authentic tenant reviews.
+              Experience the future of property search. Chat with <span className="text-rajah font-semibold">{ASSISTANT_NAME}</span>, your intelligent Lagos housing guide, to discover homes, explore neighborhoods, and read authentic tenant reviews.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
