@@ -1,10 +1,23 @@
 # Housing Intelligence Platform
 
-A conversational AI-powered housing intelligence platform for Lagos, Nigeria. Users interact with an intelligent chatbot to discover rental properties, understand market prices, and learn from real tenant experiences.
+**Personal Project** - A conversational AI-powered housing intelligence platform for Lagos, Nigeria.
+
+This is a personal portfolio project demonstrating full-stack development with AI integration. The platform allows users to interact with an intelligent chatbot to discover rental properties, understand market prices, and learn from real tenant experiences.
 
 ## Overview
 
+> **Note**: This is a personal portfolio project for demonstration purposes. It is not intended for public use or contribution.
+
 The platform combines real-time property data with AI-driven insights to help users make informed housing decisions. Using RAG (Retrieval-Augmented Generation), the system semantically searches through tenant reviews while providing up-to-date property listings and pricing information across Lagos neighborhoods.
+
+### What I Built
+
+This project demonstrates my ability to architect and implement a complete AI-powered application from scratch, including:
+- Designing a microservices architecture with clear separation of concerns
+- Implementing RAG (Retrieval-Augmented Generation) with vector databases
+- Building ReAct agents using LangGraph for intelligent tool selection
+- Creating responsive, modern UIs with smooth animations
+- Managing complex data flows across multiple services
 
 ## Key Features
 
@@ -224,7 +237,9 @@ flowchart TD
     style LLM fill:#3E4C66,stroke:#1F2937,stroke-width:2px,color:#fff
 ```
 
-## Quick Start
+## Technical Documentation
+
+> **Note**: This is a personal project. The setup instructions below are for documentation purposes and for my own reference during development.
 
 ### Prerequisites
 
@@ -233,14 +248,7 @@ flowchart TD
 - **MySQL 8.0+** (for property database)
 - **OpenAI API Key** (for LLM and embeddings)
 
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/yourusername/housing_intelligence_platform.git
-cd housing_intelligence_platform
-```
-
-### 2. Setup Backend
+### Backend Setup
 
 ```bash
 cd backend
@@ -268,7 +276,7 @@ uvicorn app.main:app --reload --port 8000
 
 **Backend should now be running at** `http://localhost:8000`
 
-### 3. Setup AI-Engine
+### AI-Engine Setup
 
 ```bash
 cd ai-engine
@@ -294,7 +302,7 @@ uvicorn app.main:app --reload --port 8001
 
 **AI-Engine should now be running at** `http://localhost:8001`
 
-### 4. Setup Frontend
+### Frontend Setup
 
 ```bash
 cd frontend
@@ -312,15 +320,13 @@ npm run dev
 
 **Frontend should now be running at** `http://localhost:5173`
 
-### 5. Test the Application
+### Testing the Application
 
-1. Open `http://localhost:5173` in your browser
-2. Click "Start Chatting" on the landing page
-3. Try queries like:
-   - "How much is rent in Lekki?"
-   - "Show me 2-bedroom apartments in Ikeja"
-   - "What do tenants say about Victoria Island?"
-   - "Compare rent prices in Yaba and Surulere"
+Example queries to test functionality:
+- "How much is rent in Lekki?"
+- "Show me 2-bedroom apartments in Ikeja"
+- "What do tenants say about Victoria Island?"
+- "Compare rent prices in Yaba and Surulere"
 
 ## Environment Variables
 
@@ -541,25 +547,26 @@ curl http://localhost:8000/api/v1/properties?area=Lekki&bedrooms=2
 - **Font**: Raleway (Google Fonts)
 - **Weights**: Regular 400, Semibold 600
 
-## Deployment
+## Deployment Notes
 
-### Environment-Specific Considerations
+> **For my reference**: Deployment considerations for this personal project
+
+### Production Configuration
 
 **Backend**:
-- Use production MySQL database
-- Configure Cloudinary for image storage
-- Set `AI_ENGINE_URL` to production AI-Engine URL
+- Production MySQL database
+- Cloudinary for image storage
+- Production `AI_ENGINE_URL`
 
 **AI-Engine**:
-- Ensure OpenAI API key has sufficient credits
-- ChromaDB can scale to persistent mode for production
+- OpenAI API key management
+- ChromaDB persistent mode
 
 **Frontend**:
-- Build with `npm run build`
-- Set `VITE_API_URL` to production backend URL
-- Deploy to Vercel, Netlify, or similar
+- Build: `npm run build`
+- Production `VITE_API_URL`
 
-### Recommended Stack
+### Potential Deployment Stack
 
 - **Frontend**: Vercel
 - **Backend + AI-Engine**: Railway, Render, or DigitalOcean
@@ -580,14 +587,6 @@ The platform currently supports these Lagos neighborhoods:
 - Gbagada
 - Maryland
 - Magodo
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## Troubleshooting
 
@@ -614,19 +613,28 @@ The platform currently supports these Lagos neighborhoods:
 - Run seeding script: `cd ai-engine && python scripts/seed_chromadb.py`
 - Verify collection name matches `CHROMADB_COLLECTION` in `.env`
 
-## License
+## About This Project
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This is a personal portfolio project built to demonstrate full-stack development skills with modern AI integration. The project showcases:
 
-## Acknowledgments
+- Microservices architecture with FastAPI
+- AI/ML integration with LangChain and LangGraph
+- RAG (Retrieval-Augmented Generation) implementation
+- Vector databases for semantic search
+- Modern React development with Tailwind CSS
+- Real-time chat interfaces with streaming responses
 
-- OpenAI for GPT-4o-mini and text embeddings
-- LangChain and LangGraph for agent framework
-- ChromaDB for vector database
-- FastAPI for excellent Python web framework
-- React, Tailwind and Vite for modern frontend development
+### Technologies Used
+
+- **AI/ML**: OpenAI GPT-4o-mini, LangChain, LangGraph, ChromaDB
+- **Backend**: FastAPI, SQLAlchemy, MySQL
+- **Frontend**: React 18, Vite, Tailwind CSS, Framer Motion
+- **DevOps**: Python virtual environments, npm, uvicorn
 
 ## Contact
+
+**Abdullah Badrudeen**
+**AI Developer**
 
 abdullahbadru66@gmail.com
 https://www.linkedin.com/in/abdullahibadrudeen
