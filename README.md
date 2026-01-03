@@ -636,6 +636,6 @@ This is a personal portfolio project built to demonstrate full-stack development
 **Abdullah Badrudeen**  
 **AI Developer**
 
-abdullahbadru66@gmail.com
-https://www.linkedin.com/in/abdullahibadrudeen
+abdullahbadru66@gmail.com  
+https://www.linkedin.com/in/abdullahibadrudeen  
 +234 903 4869 909
