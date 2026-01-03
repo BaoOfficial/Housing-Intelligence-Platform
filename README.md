@@ -633,7 +633,7 @@ This is a personal portfolio project built to demonstrate full-stack development
 
 ## Contact
 
-**Abdullah Badrudeen**
+**Abdullah Badrudeen**  
 **AI Developer**
 
 abdullahbadru66@gmail.com
